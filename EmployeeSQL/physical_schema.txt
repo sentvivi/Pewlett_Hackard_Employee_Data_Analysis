@@ -18,7 +18,7 @@ emp_no INT FK - employees.emp_no
 employees
 -
 emp_no INT PK
-emp_title_id VARCHAR(10)
+emp_title_id VARCHAR(10) FK >- titles.title_id
 birth_date DATE 
 first_name VARCHAR(14)
 last_name VARCHAR(16)
@@ -32,5 +32,5 @@ salary INT
 
 titles
 -
-title_id VARCHAR(10) PK FK -< employees.emp_title_id
+title_id VARCHAR(10) PK 
 title VARCHAR(50) 
